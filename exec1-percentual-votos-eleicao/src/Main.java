@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Eleicao eleicao = new Eleicao(1000, 800, 150);
 
-        System.out.printf("Percentual de votos válidos: %.2f%% ", eleicao.percentualVotosValidos());
+        System.out.printf("Percentual de votos válidos: %.2f%% \n", eleicao.percentualVotosValidos());
+        System.out.printf("Percentual de votos brancos: %.2f%% \n", eleicao.percentualVotosBrancos());
     }
 }
