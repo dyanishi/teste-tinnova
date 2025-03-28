@@ -5,10 +5,11 @@ public class Eleicao {
     private int votosBrancos;
     private int votosNulos;
 
-    public Eleicao(int totalEleitores, int votosValidos, int votosBrancos) {
+    public Eleicao(int totalEleitores, int votosValidos, int votosBrancos, int votosNulos) {
         this.totalEleitores = totalEleitores;
         this.votosValidos = votosValidos;
         this.votosBrancos = votosBrancos;
+        this.votosNulos = votosNulos;
     }
 
     // Método para calcular o percentual de votos válidos
@@ -19,5 +20,10 @@ public class Eleicao {
     // Método para calcular o percentual de votos brancos
     public double percentualVotosBrancos() {
         return ((double) votosBrancos / totalEleitores) * 100;
+    }
+
+    // Método para calcular o percentual de votos nulos
+    public double percentualVotosNulos() {
+        return ((double) votosNulos / totalEleitores) * 100;
     }
 }
