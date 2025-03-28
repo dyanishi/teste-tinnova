@@ -7,11 +7,12 @@ public class Main {
         int numero = 0;
         boolean valorPermitido = false;
 
+        // Enquanto não receber valor permitido
         while (!valorPermitido) {
             System.out.println("Digite um número inteiro para calcular o fatorial:");
             if (scanner.hasNextInt()) {
                 numero = scanner.nextInt();
-                if (numero >= 0) {
+                if (numero >= 0) {  //Validar se número é positivo ou zero
                     valorPermitido = true;
                 } else {
                 System.out.println("Por favor digitar um número inteiro");
