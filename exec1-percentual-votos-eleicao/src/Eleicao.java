@@ -12,17 +12,17 @@ public class Eleicao {
         this.votosNulos = votosNulos;
     }
 
-    // Método para calcular o percentual de votos válidos
+    // Metodo para calcular o percentual de votos válidos
     public double percentualVotosValidos() {
         return ((double) votosValidos / totalEleitores) * 100;
     }
 
-    // Método para calcular o percentual de votos brancos
+    // Metodo para calcular o percentual de votos brancos
     public double percentualVotosBrancos() {
         return ((double) votosBrancos / totalEleitores) * 100;
     }
 
-    // Método para calcular o percentual de votos nulos
+    // Metodo para calcular o percentual de votos nulos
     public double percentualVotosNulos() {
         return ((double) votosNulos / totalEleitores) * 100;
     }
